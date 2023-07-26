@@ -36,20 +36,35 @@
 
 
 </head>
-<body class="font-lato mx-auto">
+<body class="font-lato">
 
-    <header >
+    <!-- Nav Bar section -->
+
+    <header class="w-3/4 mx-auto relative">
         <nav class="bg-clr-primary text-white mt-10 rounded-full">
               <div class="navbar">
 
-                    <div class="navbar-start lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                      <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      </label>
+                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-black rounded-box w-52">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
-                    </ul>
+                      </ul>
                     </div>
+                    <div>
+                        <ul class="menu menu-horizontal dropdown-content hidden md:hidden lg:flex px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                  </div>
 
                     <div class="navbar-center">
                         <img class="w-10 h-15" src="./images/logo.png" alt="Logo image">
@@ -62,9 +77,119 @@
               </div>
         </nav>
 
+        <!-- Banner Section -->
+
+        <section class="mt-10">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./images/banner1.png" class="w-full" />
+                  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+                   <div class="absolute top-1/2 left-1/2 transform z-30 -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h1 class="text-white text-4xl font-extrabold">Exotic tastes at your doorstep</h1>
+                    <p class="text-white mt-4">We supply highly quality organic products</p>
+                    <button class="btn btn-ghost text-white bg-clr-primary mt-5">Shop Now</button>
+                    
+                   </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div> 
+
+
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./images/banner2.png" class="w-full" />
+                  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+                   <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h1 class="text-white text-4xl font-extrabold">Exotic tastes at your doorstep</h1>
+                    <p class="text-white mt-4">We supply highly quality organic products</p>
+                    <button class="btn btn-ghost text-white bg-clr-primary mt-5">Shop Now</button>
+                    
+                   </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div> 
+
+
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./images/banner3.png" class="w-full" />
+                  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+                   <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h1 class="text-white text-4xl font-extrabold">Exotic tastes at your doorstep</h1>
+                    <p class="text-white mt-4">We supply highly quality organic products</p>
+                    <button class="btn btn-ghost text-white bg-clr-primary mt-5">Shop Now</button>
+                    
+                   </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div> 
+
+
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="./images/banner4.png" class="w-full" />
+                  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+                   <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <h1 class="text-white text-4xl font-extrabold">Exotic tastes at your doorstep</h1>
+                    <p class="text-white mt-4">We supply highly quality organic products</p>
+                    <button class="btn btn-ghost text-white bg-clr-primary mt-5">Shop Now</button>
+                    
+                   </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div> 
+              </div>
+        </section>
+
+        <!-- Bonus Part -->
+        <section class="w-3/4 h-32 bg-white absolute shadow-md shadow-gray-400 left-20 -mt-16 text-center px-6 py-4">
+            <div class="flex justify-around">
+                <div class="w-24">
+                    <img src="./images/fruit1.png" alt="fruits">
+                    <p>Strawberry</p>
+                </div>
+                <div class="w-20">
+                    <img src="./images/fruit2.png" alt="fruits">
+                    <p>Orange</p>
+                </div>
+                <div class="w-28">
+                    <img src="./images/fruit3.png" alt="fruits">
+                    <p>Mango</p>
+                </div>
+                <div class="w-24">
+                    <img src="./images/fruit4.png" alt="fruits">
+                    <p>Strawberry</p>
+                </div>
+                <div class="w-24">
+                    <img src="./images/fruit5.png" alt="fruits">
+                    <p>Mango</p>
+                </div>
+
+            </div>
+
+        </section>
+
     </header>
 
     <main>
+
+        <!-- Daily Deals -->
+
+        <section class="w-3/4">
+            <div>
+
+            </div>
+            <div>
+                
+            </div>
+
+        </section>
+
 
     </main>
 
